@@ -1,0 +1,8 @@
+<resources>
+    <string name="title_activity_login">채팅룸 입장</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">이름(별명)이 뭐니?</string>
+    <string name="action_sign_in">Join</string>
+    <string name="action_sign_in_short">Join</string>
+    <string name="error_field_required">이름 입력안하면 안돼~~</string>
+</resources>

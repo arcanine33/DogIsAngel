@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="168dp"
+    android:background="@drawable/navi_background"
+    android:padding="16dp"
+    android:gravity="center|bottom"
+    android:id="@+id/imageView1">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/header_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유저 이름"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/header_user_name"/>
+
+    </LinearLayout>
+</LinearLayout>

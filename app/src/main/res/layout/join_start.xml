@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_shot">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디/비밀번호 입력"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/tabcolor"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_id"
+        android:paddingLeft="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:hint="ID를 입력해주세요."
+        android:textColorHint="@color/tabcolor"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/membership_ID"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/id_check"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/login_password"
+        android:paddingLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호를 입력해주세요."
+        android:textColorHint="@color/tabcolor"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/membership_PW"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/login_password"
+        android:paddingLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호를 한번더 입력해주세요."
+        android:textColorHint="@color/tabcolor"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/membership_PW_Check"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="38dp"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/pw_check"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/next"
+        android:layout_marginTop="10dp"
+        android:id="@+id/join_start_next"/>
+
+
+
+
+
+
+
+</LinearLayout>

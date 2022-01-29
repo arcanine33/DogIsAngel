@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/tabcolor"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/humanwriting_toolbar"
+            android:background="@color/colorred"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:id="@+id/writeText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="13sp"
+                android:textColor="@color/colorred" />
+
+            <EditText
+                android:id="@+id/writeinput1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="@color/colorPrimaryDar"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/tabcolor"
+                android:hint="제목을 입력해주세요" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/line_promote"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:id="@+id/n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="사진첨부 (사진은 원본 사진이 올라갑니다 :) )"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorred"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="4dp">
+
+
+                    <ImageView
+                        android:id="@+id/picturepluse1"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+
+                    <ImageView
+                        android:id="@+id/picturepluse2"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+                    <ImageView
+                        android:id="@+id/picturepluse3"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus"/>
+                    <ImageView
+                        android:id="@+id/picturepluse4"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+                    <ImageView
+                        android:id="@+id/picturepluse5"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/line_promote"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/writeText3"
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상세내용"
+                android:textSize="13sp"
+                android:textColor="@color/colorred" />
+
+            <EditText
+                android:id="@+id/writeinput2"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="@color/colorPrimaryDar"
+                android:paddingLeft="3dp"
+                android:backgroundTint="@color/tabcolor"
+                android:textSize="16sp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:lines="5"
+
+
+                android:gravity="top|left"
+                android:hint="내용을 입력을 해주세요"
+
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line_promote"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고민 키워드"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/colorred"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="(중복가능)"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="16dp">
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_04_dungproblems"
+                    android:id="@+id/gomin_04_dungproblems"/>
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_04_attack"
+                    android:id="@+id/gomin_04_attack"/>
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_04_barkinghabit"
+                    android:id="@+id/gomin_04_barkinghabit"/>
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_04_bitinghabit"
+                    android:id="@+id/gomin_04_bitinghabit"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="16dp">
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_04_sociability"
+                    android:id="@+id/gomin_04_sociability"/>
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/earch_04_eatdung"
+                    android:id="@+id/gomin_04_eatdung"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/file_upload_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/file_up"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

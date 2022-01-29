@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_promote"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="제목"
+                android:textSize="13sp"
+                android:textColor="@color/colorred"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <EditText
+                android:id="@+id/pro_write_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="@color/colorPrimaryDar"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/tabcolor"
+                android:hint="제목을 입력해 주세요"
+                android:maxLength="15">
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_promote"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="크기"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="13sp"
+                android:textColor="@color/colorred" />
+
+
+            <RadioGroup
+                android:id="@+id/join_dogsize_radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="16dp"
+                android:textSize="16dp"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/small_size"
+                    android:textColor="@color/colorgray"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/small" />
+
+                <RadioButton
+                    android:id="@+id/big_size"
+                    android:textColor="@color/colorgray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton"
+                    android:layout_marginLeft="90dp"
+                    android:text="@string/big" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/line_promote"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLength="15"
+                android:text="훈련장소"
+                android:textSize="13sp"
+                android:textColor="@color/colorred" />
+
+            <EditText
+                android:id="@+id/pro_write_area"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="@color/colorPrimaryDar"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/tabcolor"
+                android:paddingLeft="5dp"
+                android:background="@drawable/profileedit_square"
+                android:hint="훈련할 장소를 정확하고 자세하게 적어주세요!"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/line_promote"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="모집인원"
+                android:textSize="13sp"
+                android:textColor="@color/colorred"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="50dp"
+                    android:backgroundTint="@color/tabcolor"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:id="@+id/person_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="명"
+                    android:layout_marginRight="16dp"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/line_promote"/>
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="기간"
+                android:textSize="13sp"
+                android:textColor="@color/colorred" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/tabcolor"
+                    android:maxLength="2" />
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:text="개월"
+                    android:layout_marginRight="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/line_promote"/>
+
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="left"
+                android:text="가격(한달기준)"
+                android:textSize="13sp"
+                android:textColor="@color/colorred"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="26dp"
+                android:orientation="horizontal">
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="130dp"
+                    android:text="원가격 "
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/money_original"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="58dp"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/tabcolor"
+                    android:inputType="number" />
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="end"
+                    android:layout_gravity="bottom"
+                    android:text=" 만원"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="26dp"
+                android:orientation="horizontal">
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:text="할인 가격 "
+                    android:layout_marginRight="130dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/money"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:backgroundTint="@color/tabcolor"
+                    android:inputType="number" />
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:text=" 만원"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/line_promote"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="사진첨부"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textSize="13sp"
+                android:textColor="@color/colorred" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="13dp">
+
+                <ImageView
+                    android:id="@+id/pro_picturepluse1"
+                    android:layout_width="65dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/plus"/>
+
+                <ImageView
+                    android:id="@+id/pro_picturepluse2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/plus"/>
+
+                <ImageView
+                    android:id="@+id/pro_picturepluse3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/plus" />
+
+                <ImageView
+                    android:id="@+id/pro_picturepluse4"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/plus" />
+
+                <ImageView
+                    android:id="@+id/pro_picturepluse5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/plus" />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_promote"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:id="@+id/writeText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="상세내용"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorred" />
+
+                <EditText
+                    android:id="@+id/pro_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="16dp"
+                    android:scrollbarStyle="insideInset"
+                    android:gravity="top|left"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:textColorHint="@color/colorPrimaryDar"
+                    android:paddingLeft="3dp"
+                    android:hint="홍보할 내용을 입력을 해주세요"
+                    android:backgroundTint="@color/tabcolor"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line_promote"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                        android:id="@+id/writeText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="주요훈련내용"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorred" />
+
+
+                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                        android:id="@+id/writeText5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="(중복가능)"
+
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_basictraining"
+                        android:layout_width="82dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_basictraining" />
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_pottytraining"
+                        android:layout_width="82dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_pottytraining" />
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_playtraining"
+                        android:layout_width="82dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_playtraining" />
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_sociability"
+                        android:layout_width="82dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_sociability" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_bitingdog"
+                        android:layout_width="120dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/search_03_bitingdog" />
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_barkingdog"
+                        android:layout_width="120dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/search_03_barkingdog" />
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_eatdung"
+                        android:layout_width="88dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/search_03_eatdung" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_competition"
+                        android:layout_width="82dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_height="29dp"
+                        android:background="@drawable/search_03_competition" />
+
+                    <ToggleButton
+                        android:id="@+id/joint_search_03_guidance"
+                        android:layout_width="82dp"
+                        android:layout_height="29dp"
+                        android:background="@drawable/search_03_guidance" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pro_file_upload_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/file_up"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

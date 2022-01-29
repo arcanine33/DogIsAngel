@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:id="@+id/i_cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:id="@+id/I_mypage_main_Img"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/I_mypage_main_title"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#ffffff"/>
+                <ImageView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jeonmoomin_articles_star1"
+                    android:id="@+id/I_mypage_star"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_alignBottom="@+id/pro_item_image"
+
+                    android:id="@+id/post_title"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#ffffff"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/I_mypage_profile_Img"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:transitionName="@string/transitionName"
+                        android:layout_marginRight="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="홍길동"
+                                android:id="@+id/I_mypage_user_name"
+                                android:textSize="20sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginRight="17dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30"
+                                    android:textSize="20sp"
+                                    android:id="@+id/I_mypage_price"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="만원"
+                                    android:textSize="20sp"
+                                    android:layout_toRightOf="@+id/I_mypage_price"
+                                    android:id="@+id/price_unit"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="대전광역시 선화동 "
+                            android:id="@+id/I_mypage_region"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016.08.14"
+                        android:textSize="10sp"
+                        android:id="@+id/I_mypage_register_data"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/comment_icon"
+                            android:layout_marginRight="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textSize="13sp"
+                            android:layout_marginRight="10sp"
+                            android:id="@+id/I_mypage_comment_count"/>
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/star_count"
+                            android:layout_marginRight="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="10"
+                            android:layout_marginRight="10sp"
+                            android:id="@+id/I_mypage_star_count"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

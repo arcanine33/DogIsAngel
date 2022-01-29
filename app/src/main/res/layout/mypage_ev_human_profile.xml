@@ -1,0 +1,116 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="188dp"
+                    android:src="@drawable/dog"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14조(무대예술 전문인의 자격) ① 문화체육관광부장관은 대통령령으로 정하는 응시기준을 갖추고 제15조에 따라 지정된 무대예술 전문인 검정기관이 실시하는 검정에 합격한 사람에게 무대예술 전문인 자격을 부여한다.
+ 무대예술 전문인은
+ 무대기계·무대조명·무대음향 등의 종류별로 1급부터 3급까지로 구분하며, 구체적인 자격의 종류 및 자격검정, 그 밖에 자격증의 발급 절차 등에 관하여 필요한 사항은 대통령령으로 정한다."/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDar"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="댓글.리뷰"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollview_gomin">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/mylist_gominpro"
+                    android:fillViewport="true"
+                    android:background="#dddddd">
+
+                </ListView>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:hint="내용을 입력해주세요"
+                    android:id="@+id/myedit_gomin"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전송"
+                    android:id="@+id/mypage_da_gomin"
+                    style="?android:attr/buttonStyleSmall"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

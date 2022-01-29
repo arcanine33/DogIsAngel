@@ -1,0 +1,275 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    tools:context="kr.co.dogisangel.android.dogisangel.Search.Fragment_gomin">
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="18dp">
+
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:layout_marginTop="10dp"
+            android:text="글형태" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checkedButton="@+id/radio_search"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_search1"
+                android:checked="true"
+                android:layout_marginRight="50dp"
+                android:text="전문인 찾기"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:id="@+id/radio_search2"
+                android:text="고민 나누기"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="내용을 입력해 주세요"
+            android:layout_marginTop="18dp"
+            android:id="@+id/search_edit"
+            android:background="@drawable/search_02_categoryspiner"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/search_pro_hint"
+            android:visibility="visible"
+            android:layout_marginLeft="23dp"
+            android:text="ex)김세아 / 경찰견 훈련 / 소형견"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/search_human_hint"
+            android:visibility="gone"
+            android:layout_marginLeft="23dp"
+            android:text="ex)김세아 / 이빨이 썩어요"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/gomin_1"
+                android:visibility="gone"
+                android:layout_marginTop="15dp">
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고민 키워드(중복가능)"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorred"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_04_dungproblems"
+                        android:id="@+id/search_04_dungproblems"/>
+
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_04_attack"
+                        android:id="@+id/search_04_attack"/>
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_04_barkinghabit"
+                        android:id="@+id/search_04_barkinghabit"/>
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_04_bitinghabit"
+                        android:id="@+id/search_04_bitinghabit"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="29dp"
+                    android:orientation="horizontal">
+                    <ToggleButton
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_04_sociability"
+                        android:id="@+id/search_04_sociability"/>
+
+                    <ToggleButton
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/earch_04_eatdung"
+                        android:id="@+id/earch_04_eatdung"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pro_1"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:textColor="@color/colorred"
+                    android:layout_marginTop="27dp"
+                    android:text="주요훈련내용(중복가능)" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_basictraining"
+                        android:id="@+id/search_03_basictraining"/>
+
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_pottytraining"
+                        android:id="@+id/search_03_pottytraining"/>
+
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_playtraining"
+                        android:id="@+id/search_03_playtraining"/>
+
+                    <ToggleButton
+                        android:layout_width="77dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/search_03_sociability"
+                        android:id="@+id/search_03_sociability"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/search_03_bitingdog"
+                        android:id="@+id/search_03_bitingdog"/>
+
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/search_03_barkingdog"
+                        android:id="@+id/search_03_barkingdog"/>
+
+                    <ToggleButton
+                        android:layout_width="78dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/search_03_eatdung"
+                        android:id="@+id/search_03_eatdung"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:layout_width="82dp"
+                        android:layout_height="29dp"
+                        android:background="@drawable/search_03_competition"
+                        android:id="@+id/search_03_competition"/>
+
+                    <ToggleButton
+                        android:layout_width="82dp"
+                        android:layout_height="29dp"
+                        android:background="@drawable/search_03_guidance"
+                        android:id="@+id/search_03_guidance"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorred"
+                android:layout_marginTop="27dp"
+                android:text="지역(선택)" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:entries="@array/city"
+                android:id="@+id/search_spinner"></Spinner>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="검색하기"
+                android:id="@+id/search_start"
+                android:background="@drawable/search_03_searchbutton"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_promote"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="제목"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorred"
+                    android:layout_marginTop="13dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColorHint="@color/colorPrimaryDar"
+                    android:hint="제목을 입력해 주세요"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/tabcolor"
+                    android:id="@+id/edit_promote_title"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_promote"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="크기"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorred" />
+
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="13dp"
+                    android:theme="@color/colorgray"
+                    android:id="@+id/edit_promote_dog_size_radio_group">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_promote_small_size"
+                        android:textColor="@color/colorgray"
+                        android:theme="@style/RadioButton"
+                        android:textSize="15dp"
+                        android:text="@string/small"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:textColor="@color/colorgray"
+                        android:theme="@style/RadioButton"
+                        android:textSize="15dp"
+                        android:text="@string/big"
+                        android:id="@+id/edit_promote_big_size"/>
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_promote"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="훈련장소"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorred"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="26dp"
+                    android:theme="@color/colorgray"
+                    android:id="@+id/training_spot_radio_group">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:theme="@style/RadioButton"
+                        android:textColor="@color/colorgray"
+                        android:text="@string/initiatory"
+                        android:id="@+id/edit_initiatory_training"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorgray"
+                        android:layout_marginLeft="80dp"
+                        android:theme="@style/RadioButton"
+                        android:textSize="15dp"
+                        android:text="@string/visit"
+                        android:id="@+id/edit_visit_training"/>
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_promote"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="기간"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorred" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:gravity="end">
+
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:backgroundTint="@color/tabcolor"
+                        android:maxLength="2"
+                        android:id="@+id/edit_training_month"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="bottom"
+                        android:text="개월"
+                        android:layout_marginRight="20dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_promote"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격"
+                            android:layout_marginTop="13dp"
+                            android:gravity="left"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorred" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="(한달 기준)"
+                            android:layout_marginTop="13dp"
+                            android:gravity="left"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="end">
+
+                        <EditText
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:inputType="number"
+                            android:backgroundTint="@color/tabcolor"
+                            android:id="@+id/edit_training_price"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom"
+                            android:textSize="15sp"
+                            android:layout_marginRight="20dp"
+                            android:text="만원"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_promote"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/colorred"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/n"
+                    android:text="사진첨부"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="13dp">
+                    <ImageView
+                        android:id="@+id/edit_pro_picturepluse1"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+
+                    <ImageView
+                        android:id="@+id/edit_pro_picturepluse2"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+                    <ImageView
+                        android:id="@+id/edit_pro_picturepluse3"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+                    <ImageView
+                        android:id="@+id/edit_pro_picturepluse4"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus"/>
+                    <ImageView
+                        android:id="@+id/edit_pro_picturepluse5"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line_promote"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="상세내용"
+                        android:textColor="@color/colorred"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="13dp"
+                        android:id="@+id/writeText3"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="123dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingLeft="7dp"
+                        android:paddingBottom="90dp"
+                        android:hint="내용을 입력을 해주세요"
+                        android:textColorHint="@color/colorPrimaryDar"
+                        android:backgroundTint="@color/tabcolor"
+                        android:layout_marginLeft="23dp"
+                        android:textSize="16dp"
+                        android:id="@+id/edit_training_promote_content"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/line_promote"
+                        android:layout_marginTop="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="주요훈련내용"
+                            android:paddingLeft="16dp"
+                            android:textColor="@color/colorred"
+                            android:layout_marginTop="13dp"
+                            android:id="@+id/writeText4"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:layout_marginTop="13dp"
+                            android:text="(중복가능)"
+                            android:id="@+id/writeText5"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="23dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginTop="13dp">
+
+                        <ToggleButton
+                            android:layout_width="82dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/search_03_basictraining"
+                            android:id="@+id/edit_promote_basictraining"/>
+
+                        <ToggleButton
+                            android:layout_width="82dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/search_03_pottytraining"
+                            android:id="@+id/edit_promote_pottytraining"/>
+
+                        <ToggleButton
+                            android:layout_width="82dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/search_03_playtraining"
+                            android:id="@+id/edit_promote_playtraining"/>
+
+                        <ToggleButton
+                            android:layout_width="82dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/search_03_sociability"
+                            android:id="@+id/edit_promote_sociability"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="23dp"
+                        android:paddingRight="16dp"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:layout_width="120dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/search_03_bitingdog"
+                            android:id="@+id/edit_promote_bitingdog"/>
+
+                        <ToggleButton
+                            android:layout_width="120dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/search_03_barkingdog"
+                            android:id="@+id/edit_promote_barkingdog"/>
+
+                        <ToggleButton
+                            android:layout_width="88dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/search_03_eatdung"
+                            android:id="@+id/edit_promote_eatdung"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="23dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginBottom="13dp"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:layout_width="82dp"
+                            android:layout_height="29dp"
+                            android:background="@drawable/search_03_competition"
+                            android:id="@+id/edit_promote_competition"/>
+
+                        <ToggleButton
+                            android:layout_width="82dp"
+                            android:layout_height="29dp"
+                            android:background="@drawable/search_03_guidance"
+                            android:id="@+id/edit_promote_guidance"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageButton
+                    android:id="@+id/edit_promote_file_upload_btn"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/file_up" />
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

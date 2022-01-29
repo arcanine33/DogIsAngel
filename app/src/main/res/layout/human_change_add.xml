@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:id="@+id/human_add_edit"
+        android:hint="반려견 이름을 입력해주세요."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:text="나이"/>
+
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/human_add_age"
+
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:text="종"/>
+        <Spinner
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/human_add_type"
+          />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수컷"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/human_add_man"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="암컷"
+            android:id="@+id/human_add_woman"
+            android:layout_marginLeft="100dp"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>

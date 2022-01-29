@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabcolor"
+    tools:context="kr.co.dogisangel.android.dogisangel.Customer_Service.Inquire_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="55dp"
+        android:text="문의하실 내용은"
+        android:textSize="16sp"
+
+        android:id="@+id/custom_text1"/>
+
+    <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:textSize="16sp"
+        android:id="@+id/custom_text2"
+        android:text="hjsert@naver.com으로 보내주세요" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/custom_button"
+            android:layout_marginTop="38dp"
+            android:layout_gravity="center"
+            android:onClick="inquireOnClick"
+            android:background="@drawable/servicecenter2_question0"/>
+
+    </LinearLayout>
+
+</FrameLayout>

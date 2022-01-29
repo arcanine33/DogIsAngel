@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/confirmBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/search_icon"
+                    android:fitsSystemWindows="true"
+                    android:layout_alignParentRight="true"/>
+
+                
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ranking"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/mainrangking"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+
+       <android.support.design.widget.TabLayout
+           android:id="@+id/main_tabs"
+           android:layout_width="match_parent"
+           android:layout_height="48dp"
+           app:tabMode="fixed"
+           app:tabIndicatorHeight="0dp"
+           app:tabPaddingBottom="0dp"
+           app:tabPaddingStart="0dp"
+           app:tabPaddingEnd="0dp"
+           app:tabPaddingTop="0dp"
+           android:background="#ffffff"
+           app:tabIndicatorColor="@android:color/white"
+           >
+       </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/floatting_btn"
+        app:backgroundTint="#f44c58"/>
+</android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
+
+
+

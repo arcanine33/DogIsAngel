@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/human_profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorred" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="50dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="댓글.리뷰" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/gomin_profile_scrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <ListView
+                    android:id="@+id/gomin_mylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#dddddd"
+                    android:fillViewport="true">
+
+                </ListView>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/gomin_myedit"
+                    android:layout_width="273dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="18dp"
+                    android:hint="내용을 입력해주세요" />
+
+                <Button
+                    android:id="@+id/gomin_mypage_da"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전송" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

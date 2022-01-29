@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="169dp"
+        android:layout_height="240dp"
+        android:id="@+id/cardView"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:transitionName="@string/transitionName"
+                    android:scaleType="fitXY"
+                    android:id="@+id/gomin_item_image" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blackbackground_gomin"
+                    android:layout_alignBottom="@+id/gomin_item_image"/>
+
+                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="sadsadsad"
+                    android:layout_alignBottom="@+id/gomin_item_image"
+                    android:textColor="#ffffff"
+                    android:id="@+id/gomin_main_title" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gomin_profile_Img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <kr.co.dogisangel.android.dogisangel.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="홍길동"
+                            android:layout_marginTop="3dp"
+                            android:id="@+id/gomin_user_name"
+                            android:textSize="16sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingRight="8dp"
+                            android:gravity="right|top">
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대전광역시 선화동 "
+                        android:layout_marginTop="3dp"
+                        android:textSize="10sp"
+                        android:id="@+id/gomin_region"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

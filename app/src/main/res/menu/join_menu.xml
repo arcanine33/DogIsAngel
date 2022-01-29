@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/owner">
+    <item
+        android:id="@+id/join_delete_menu"
+
+        android:title="삭제">
+    </item>
+    <item
+        android:id="@+id/recruit_completion"
+        android:title="모집완료">
+    </item>
+
+    </group>
+
+    <group
+        android:id="@+id/guest">
+
+        <item
+            android:id="@+id/declare_menu"
+            android:title="신고">
+        </item>
+
+    </group>
+
+
+
+</menu>

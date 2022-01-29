@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.dogisangel.android.dogisangel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity
+            android:name=".VersionInformation.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login.Login"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Notify.Notify"
+            android:screenOrientation="portrait"
+            android:label="공지사항" />
+        <activity
+            android:name=".Setting.Setting"
+            android:screenOrientation="portrait"
+            android:label="설정" />
+        <activity
+            android:name=".Customer_Service.Customer_Service"
+            android:screenOrientation="portrait"
+            android:label="고객 센터" />
+        <activity
+            android:name=".VersionInformation.Version_Information"
+            android:screenOrientation="portrait"
+            android:label="버전정보" />
+        <activity android:name=".Chatting.ChattingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+
+
+        <activity android:name=".Pro.ProPromoteDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".DogGomin.GominDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".Search.SearchHumanActivity"
+            android:screenOrientation="portrait"
+            android:label="고민 나누기"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".Search.SearchProActivity"
+            android:screenOrientation="portrait"
+            android:label="전문인 찾기"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".Notification.Notification"
+            android:screenOrientation="portrait"
+            android:label="알림"/>
+
+        <activity android:name=".FloatingButton.HumanWriting_Activity"
+            android:screenOrientation="portrait"
+            android:label="고민나누기 글쓰기"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".FloatingButton.ProWriting"
+            android:screenOrientation="portrait"
+            android:label="전문인 글쓰기"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+
+        <activity android:name=".Modified.Pro_changeActivity"
+            android:screenOrientation="portrait"
+            android:label="회원 정보 수정"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+     <activity android:name=".Edit.EditPromote"
+         android:screenOrientation="portrait"
+         android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+
+
+        <activity android:name=".Login.LoginSearchMain"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name=".Membership.HumanStartActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Membership.ProStartActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Login.ID_search_confirm"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Login.Password_search_confirm"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".ExternalView.MyPageEVProActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".Modified.Human_changeActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="회원 정보 수정"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity android:name=".MyPage.ProfileActivity"
+            android:label="프로필"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".MyPage.MyLikeActivity"
+            android:label="내찜"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".MyPage.MyPostActivity"
+            android:label="내글"
+            android:screenOrientation="portrait"></activity>
+
+
+
+
+
+
+
+        <activity android:name=".Ranking.ranking_activity" android:label="등급"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity android:name=".Membership.Membership_Human"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Membership.Membership_Pro"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Membership.Membership_main" android:label="회원가입 선택 화면"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Pro.ProJoinDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:label="공동훈련 상세설명"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Chatting.Chatting_main"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+
+        <meta-data
+            android:name="kr.co.dogisangel.android.dogisangel.TAcademyGlideModule"
+            android:value="GlideModule" />
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="15" />
+
+</manifest>

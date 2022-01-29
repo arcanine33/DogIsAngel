@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="174dp"
+        android:layout_height="250dp"
+        android:id="@+id/custom_cardView"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:transitionName="@string/transitionName"
+                    android:id="@+id/gomin_item_image"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="sadsadsad"
+                    android:layout_alignBottom="@+id/gomin_item_image"
+                    android:textColor="#ffffff"
+                    android:id="@+id/gomin_main_title"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gomin_profile_Img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginRight="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="홍길동"
+                            android:id="@+id/gomin_user_name"
+                            android:textSize="20sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingRight="8dp"
+                            android:gravity="right|top">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2016.08.06"
+                                android:textSize="7sp"
+                                android:id="@+id/gomin_register_date"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대전광역시 선화동 "
+                        android:textSize="10sp"
+                        android:id="@+id/gomin_region"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="174dp"
+        android:layout_height="250dp"
+        android:id="@+id/cardView1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:transitionName="@string/transitionName"
+                    android:id="@+id/gomin_item_image1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="sadsadsad"
+                    android:layout_alignBottom="@+id/gomin_item_image1"
+                    android:textColor="#ffffff"
+                    android:id="@+id/gomin_main_title1"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gomin_profile_Img1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="홍길동"
+                            android:id="@+id/gomin_user_name1"
+                            android:textSize="20sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingRight="8dp"
+                            android:gravity="right|top">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2016.08.06"
+                                android:textSize="7sp"
+                                android:id="@+id/gomin_register_date1"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대전광역시 선화동 "
+                        android:textSize="10sp"
+                        android:id="@+id/gomin_region1"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

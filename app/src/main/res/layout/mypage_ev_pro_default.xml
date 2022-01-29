@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:id="@+id/ev_toolbar"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/ev_profile_background">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ev_profile_img"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/dog"/>
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:background="#00ffffff"
+                    android:id="@+id/ev_grade_img">
+                </ImageView>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/ev_user_name"
+                    android:text="유저 이름"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:text="자격증 이름"
+                    android:id="@+id/ev_license_text"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/ev_profile_tab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingBottom="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingTop="0dp"
+            android:background="#ffffff"
+            app:tabIndicatorColor="@android:color/white"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ev_profile_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</FrameLayout>

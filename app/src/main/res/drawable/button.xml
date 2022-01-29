@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/menu_nochoice"
+        android:state_expanded="true" />
+
+    <item android:drawable="@drawable/menu_choice"
+        android:state_expanded="false"/>
+
+    <item android:state_empty="true"
+        android:drawable="@android:color/transparent"/>
+
+
+</selector>

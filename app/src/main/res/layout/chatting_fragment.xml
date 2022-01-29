@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorred"
+        android:id="@+id/chatting_toolbar"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatting_view"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="리스트뷰" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="onClickBtn"
+            android:id="@+id/left_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="받기"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatting_input"
+            android:imeActionId="@+id/send"
+            android:imeActionLabel="@string/action_send"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+
+        <ImageButton
+            android:onClick="onClickBtn"
+            android:id="@+id/send_button"
+            android:background="@drawable/worryarticle_send"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginBottom="6dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

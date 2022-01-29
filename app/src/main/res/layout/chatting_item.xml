@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/talkprofile_img"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="7dp"
+            android:src="@drawable/dog"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="9dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/talkstar_img"
+            android:src="@drawable/jeonmoomin_articles_star1"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/talkmain_name"
+            android:text="홍길동"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/talkmain_text"
+            android:text="새로운 메세지가 있습니다."/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/talk_date"
+        android:layout_gravity="center"
+        android:text="2016.8.26"/>
+
+
+</LinearLayout>

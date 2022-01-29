@@ -1,0 +1,294 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    tools:context=".Search.SearchPro">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_02_categoryspiner"
+                android:hint="키워드를 입력해 주세요"
+                android:paddingLeft="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorred"
+            android:text="글형태" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/search_content_type_radio_group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체"
+                android:id="@+id/search_content_type_all"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="개인훈련글"
+                android:id="@+id/search_content_type_promote"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="공동훈련 모집"
+                android:id="@+id/search_content_type_join"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:textColor="@color/colorred"
+                android:text="주요훈련내용(중복가능)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_03_basictraining"
+                    android:id="@+id/search_03_basictraining"/>
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_03_pottytraining"
+                    android:id="@+id/search_03_pottytraining"/>
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_03_playtraining"
+                    android:id="@+id/search_03_playtraining"/>
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/search_03_sociability"
+                    android:id="@+id/search_03_sociability"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/search_03_bitingdog"
+                    android:id="@+id/search_03_bitingdog"/>
+
+                <ToggleButton
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/search_03_barkingdog"
+                    android:id="@+id/search_03_barkingdog"/>
+
+                <ToggleButton
+                    android:layout_width="88dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/search_03_eatdung"
+                    android:id="@+id/search_03_eatdung"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/search_03_competition"
+                    android:id="@+id/search_03_competition"/>
+
+                <ToggleButton
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/search_03_guidance"
+                    android:id="@+id/search_03_guidance"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorred"
+            android:text="크기" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal"
+            android:id="@+id/search_dog_size_radio_group">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체"
+                android:textSize="14sp"
+                android:id="@+id/search_dog_size_all"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/small"
+                android:layout_marginLeft="37dp"
+                android:textSize="14sp"
+                android:id="@+id/search_dog_size_small"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:text="@string/big"
+                android:textSize="14sp"
+                android:id="@+id/search_dog_size_big"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="훈련장소"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="16dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
+            android:id="@+id/search_train_spot_radio_group">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체"
+                android:id="@+id/search_train_spot_all"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="@string/initiatory"
+                android:id="@+id/search_train_spot_initiatory"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/visit"
+                android:id="@+id/search_train_spot_visit"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가격"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="34dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="만원" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/search_03_waveicon" />
+
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="만원" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_03_searchbutton"
+                android:id="@+id/pro_search_Btn"
+                android:text="검색하기" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

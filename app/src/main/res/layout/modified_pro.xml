@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modified_pro_toolbar"
+            android:background="@color/colorred">
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:textSize="17sp"
+            android:text="전문인 회원 정보 입력"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:id="@+id/pro_change_main"
+            android:background="@drawable/profileedit_camera"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="*필수"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력해주세요"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="33dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="*필수"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:text="생년월일"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="37dp">
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="center">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="*선택"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:hint="나머지 주소를 입력해주세요"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="33dp"
+            android:textSize="14sp"
+            android:text="*필수"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="프로필 입력"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="6dp"
+            android:hint="자기소개 및 전문인 경력 등을 입력해주세요
+
+            "
+            android:background="@drawable/profileedit_square"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="*필수"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="훈련 자격증 첨부하기(최대 5개)"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+      />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="13dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_pluse"
+                android:id="@+id/pro_change_picturepluse1"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_pluse"
+                android:id="@+id/pro_change_picturepluse2"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_pluse"
+                android:id="@+id/pro_change_picturepluse3"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_pluse"
+                android:id="@+id/pro_change_picturepluse4"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_pluse"
+                android:id="@+id/pro_change_picturepluse5"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="자격증 등록"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1급"
+                android:layout_marginLeft="30dp" />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2급"
+                android:layout_marginLeft="60dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3급"
+                android:layout_marginLeft="60dp"/>
+        </RadioGroup>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pro_change_fileUploadBtn"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/imformationenter_start"/>
+
+
+    </LinearLayout>
+</ScrollView>

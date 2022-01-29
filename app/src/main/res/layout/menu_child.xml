@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:id="@+id/menu_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:gravity="center"/>
+</LinearLayout>

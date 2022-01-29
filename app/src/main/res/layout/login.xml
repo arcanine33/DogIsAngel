@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_shot">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/login_geagachunsa"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_id"
+        android:paddingLeft="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+
+        android:hint="ID를 입력해주세요."
+        android:textColorHint="@color/tabcolor"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/login_ID"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/login_password"
+        android:paddingLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호를 입력해주세요."
+        android:inputType="numberPassword"
+        android:textColorHint="@color/tabcolor"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/login_PW"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_Btn"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/login_joinbutton"
+        android:layout_marginTop="10dp"
+        android:id="@+id/membership_Btn"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/tabcolor"
+        android:id="@+id/guest_Btn"
+        android:background="@drawable/guest_enter" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/tabcolor"
+        android:background="@drawable/account_password_found"
+        android:id="@+id/id_password_Btn"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tabcolor"
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_checkbox"
+        android:layout_gravity="center"
+        android:text="자동 로그인"/>
+
+</LinearLayout>

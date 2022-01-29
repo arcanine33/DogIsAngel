@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:onClick="clickupdate">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/notice_notice"
+        android:id="@+id/Alarm_noticimg"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="새로운 공지사항이 있습니다."
+        android:id="@+id/Alarm_text"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/notice_new"
+        android:id="@+id/Alarm_newimg"/>
+
+
+</LinearLayout>

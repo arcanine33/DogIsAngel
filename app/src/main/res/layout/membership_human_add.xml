@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+           <EditText
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:textColorHint="@color/tabcolor"
+                android:backgroundTint="@color/tabcolor"
+                android:textSize="14sp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:hint="반려견 이름을 입력해주세요."
+                android:id="@+id/human_membership_edit"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/tabcolor"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:text="나이"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/year"
+                android:id="@+id/human_membership_age"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/tabcolor"
+                android:text="종"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/year"
+                android:id="@+id/human_membership_type"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수컷"
+                android:textColor="@color/tabcolor"
+                android:theme="@style/MyRadioButton"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/human_membership_man"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="암컷"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/tabcolor"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/human_membership_woman"/>
+
+
+            </RadioGroup>
+
+</LinearLayout>

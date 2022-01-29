@@ -1,0 +1,113 @@
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabcolor"
+    android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여기는 외부 시각으로 프로필이 보여지는 부분입니다."
+                    android:id="@+id/ev_profile"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorred1"
+                    android:id="@+id/ev_license_img1"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorred1"
+                    android:id="@+id/ev_license_img2"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="댓글  "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ev_comment_count"
+                    android:text="숫자"/>
+
+
+            </LinearLayout>
+
+           <android.support.v7.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/ev_profile_comment_view">
+
+           </android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:layout_width="273dp"
+                    android:layout_height="wrap_content"
+                    android:hint="내용을 입력해주세요"
+                    android:id="@+id/ev_comment"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전송"
+                    android:id="@+id/ev_comment_Btn"
+                    android:background="@drawable/write_send" />
+            </LinearLayout>
+        </LinearLayout>
+
+</FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

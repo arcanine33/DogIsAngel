@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabcolor"
+    tools:context="kr.co.dogisangel.android.dogisangel.Customer_Service.guide_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+    <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/i_guidetext1"
+        android:textSize="14sp"
+        android:text="일반인 이용약관"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+    <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="15sp"
+        android:id="@+id/i_guidetext2"
+        android:background="@color/color"
+        android:layout_marginBottom="44dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/human_guide"/>
+        </ScrollView>
+
+
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/z_guidetext1"
+        android:textSize="14sp"
+            android:layout_marginTop="10dp"
+        android:text="전문인 이용약관"
+            android:layout_marginBottom="21dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="184dp">
+
+    <kr.co.dogisangel.android.dogisangel.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/z_guidetext2"
+        android:background="@color/color"
+        android:textSize="15sp"
+        android:layout_marginBottom="31dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/pro_guide"/>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

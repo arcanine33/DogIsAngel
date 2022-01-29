@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tabcolor">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prowriting_toolbar"
+            android:background="@color/colorred">
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <Spinner
+            android:id="@+id/writing_pro_spinner"
+            android:layout_width="match_parent"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/spiner_nochoice"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fragmentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </ScrollView>
+
+
+    </LinearLayout>
+</FrameLayout>

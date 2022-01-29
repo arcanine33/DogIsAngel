@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="276dp"
+            android:id="@+id/pro_join_cardView"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:id="@+id/pro_join_item_image"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blackbackground"
+                        android:layout_alignBottom="@+id/pro_join_item_image"/>
+
+                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/join_dog_size"
+                        android:textSize="18sp"
+                        android:layout_above="@+id/join_post_title"
+                        android:layout_marginLeft="11dp"
+                        android:textColor="#ffffff"
+                        android:text="강아지 크기" />
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="44dp"
+                        android:layout_height="45dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jeonmoomin_articles_star1"
+                        android:id="@+id/join_grade_img"/>
+
+                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_alignBottom="@+id/pro_join_item_image"
+                        android:id="@+id/join_post_title"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:textColor="#ffffff"
+                        android:text="메인 제목"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="9dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="1dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/join_my_image"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:transitionName="@string/transitionName"
+                            android:layout_marginRight="12dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="홍길동"
+                                    android:layout_marginTop="6dp"
+                                    android:id="@+id/pro_join_my_name"
+                                    android:textSize="13sp"/>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:layout_marginTop="8dp"
+                                    >
+
+
+
+                                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:textSize="12sp"
+                                        android:text="숫자"
+                                        android:id="@+id/join_origin_price"/>
+
+                                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="7dp"
+                                        android:text="만원"
+                                        android:textSize="12sp"
+                                        android:id="@+id/join_origin_unit"
+                                        android:layout_toRightOf="@+id/join_origin_price"/>
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/arrow"
+                                        android:layout_marginRight="7dp"
+                                        android:background="@drawable/jeonmoomin_grouparticles_x"/>
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/arrow"
+                                        android:id="@+id/arrow"
+                                        android:layout_marginRight="7dp"
+                                        android:layout_toRightOf="@+id/join_origin_unit"/>
+
+                                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="숫자"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/colorred"
+                                        android:id="@+id/pro_join_sale_price"
+                                        android:layout_toRightOf="@+id/arrow"/>
+
+                                    <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="만원"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/colorred"
+                                        android:layout_toRightOf="@+id/pro_join_sale_price"
+                                        android:id="@+id/join_price_unit"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="기본 주소 "
+                                    android:id="@+id/join_my_region"
+                                    android:layout_marginTop="2dp"
+                                    android:textSize="10sp"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="right"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="3dp">
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="5dp"
+                        >
+
+                        <kr.co.dogisangel.android.dogisangel.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="날짜"
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:id="@+id/join_date"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/comment_icon"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_toLeftOf="@+id/join_comment_count"
+
+                                    />
+                                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                    android:layout_width="20dp"
+                                    android:layout_height="18dp"
+                                    android:text="10"
+                                    android:textSize="13sp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_toLeftOf="@+id/join_star_count_img"
+                                    android:id="@+id/join_comment_count" />
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:id="@+id/join_star_count_img"
+                                    android:layout_toLeftOf="@+id/join_star_count"
+                                    android:clickable="true"/>
+                                <kr.co.dogisangel.android.dogisangel.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:textSize="13sp"
+                                    android:layout_marginTop="4dp"
+                                    android:text="10"
+                                    android:id="@+id/join_star_count"/>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/recruit_completion"
+                android:visibility="visible"
+                android:id="@+id/recruit_completion_image"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

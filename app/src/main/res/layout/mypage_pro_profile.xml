@@ -1,0 +1,142 @@
+<ScrollView
+    android:layout_width="360dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/pro_myprofile"
+            android:background="@color/colorred"
+            android:layout_marginBottom="20dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorred1"
+                android:id="@+id/license_img1"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorred1"
+                android:id="@+id/license_img2" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="18dp"
+            android:orientation="vertical">
+
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입할때 쓴 프로필"
+                android:id="@+id/profile_content"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDar"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp">
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="댓글  "
+                android:textSize="15sp"/>
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="숫자"
+                android:textSize="15sp"
+                android:id="@+id/myprofile_comment_count"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:scrollbars="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/profile_comment_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/profile_comment"
+                android:layout_width="273dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="wrap_content"
+                android:hint="내용을 입력해주세요" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+                <ImageButton
+                    android:id="@+id/profile_comment_Btn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_marginRight="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/write_send"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_shot">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:textSize="17sp"
+            android:textColor="@color/tabcolor"
+            android:text="일반인 회원 정보 입력"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:id="@+id/member_hum_main"
+            android:background="@drawable/imformationenter_camera"/>
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="*필수"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력해주세요"
+            android:textColorHint="@color/tabcolor"
+            android:textColor="@color/tabcolor"
+            android:backgroundTint="@color/tabcolor"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/membership_human_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp">
+
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="닉네임을 입력해주세요(1~14자)"
+                android:textColorHint="@color/tabcolor"
+                android:textColor="@color/tabcolor"
+                android:backgroundTint="@color/tabcolor"
+                android:layout_marginLeft="18dp"
+                android:textSize="14sp"
+                android:maxLength="14"
+                android:id="@+id/membership_human_nickname"/>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/check" />
+
+        </LinearLayout>
+
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:textSize="14sp"
+            android:text="*사용가능한 닉네임 입니다."
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tabcolor"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:text="생년월일"/>
+
+            <kr.co.dogisangel.android.dogisangel.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/tabcolor"
+                android:id="@+id/membership_human_birthday" />
+
+            <Button
+                android:id="@+id/member_human_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_type"/>
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spiner_long"
+            android:entries="@array/city"
+            android:id="@+id/membership_human_region"/>
+
+
+
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="*선택"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/tabcolor"
+            android:backgroundTint="@color/tabcolor"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:hint="나머지 주소를 입력해주세요"
+            android:id="@+id/membership_human_other_address"/>
+
+        <kr.co.dogisangel.android.dogisangel.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tabcolor"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:text="프로필 입력"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textSize="14sp"
+            android:hint="자기소개 및 반려인 경력 등을 입력해주세요"
+            android:id="@+id/membership_human_profile"
+            android:background="@drawable/imformationenter_square" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:id="@+id/member_hum_fileUploadBtn"
+            android:background="@drawable/imformationenter_start"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
